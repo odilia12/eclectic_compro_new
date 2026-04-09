@@ -2,8 +2,11 @@
 @section('body')
     <header class="page-hero" style="background-image: url('{{ asset('assets/img/header/our_solution_crop.png') }}')">
         <div class="container page-hero-content">
-            <h1 class="page-hero-title">Our Solution</h1>
-            <div class="page-hero-breadcrumb"><a href="{{ route('home') }}">Home</a> / Our Solution</div>
+            <h1 class="page-hero-title" style="color: white">Our Solution</h1>
+            <div class="page-hero-breadcrumb">
+                <a href="{{ route('home') }}">Home</a>
+                <label style="color: white"> / Our Solution</label>
+            </div>
         </div>
     </header>
 
@@ -11,27 +14,101 @@
         <div class="container">
             <div class="text-center">
                 <div class="page-solution-kicker">Redefining what's possible through smarter technology solution</div>
+                <br>
                 <h2 class="page-solution-title">
                     Transforming business through integrated technology solutions<br />
                     Build around your needs, Powered by leading platforms
                 </h2>
             </div>
-
-            <div class="row g-4 justify-content-center pt-4">
-                @foreach ($solutions as $solution)
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="solution-card">
-                            <div class="solution-card-logo">
-                                <img src="{{ asset($solution['logo']) }}" alt="{{ $solution['name'] }}" />
-                            </div>
-                            <div class="solution-card-name">{{ $solution['name'] }}</div>
-                            <a class="solution-card-btn" href="{{ $solution['url'] }}">Learn more</a>
+        </div>
+        <br>
+        <div>
+            
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="solution-card">
+                        <div class="solution-card-logo">
+                            <img src="{{ asset('assets/img/logo/sap.png') }}" alt="SAP" />
                         </div>
+                        <div class="solution-card-name">SAP</div>
+                        <a class="solution-card-btn" href="{{ route('solution_sap') }}">Learn more</a>
                     </div>
-                @endforeach
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="solution-card">
+                        <div class="solution-card-logo">
+                            <img src="{{ asset('assets/img/logo/salesforce.png') }}" alt="Salesforce" />
+                        </div>
+                        <div class="solution-card-name">Salesforce</div>
+                        <a class="solution-card-btn" href="{{ route('solution_salesforce') }}">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="solution-card">
+                        <div class="solution-card-logo">
+                            <img src="{{ asset('assets/img/logo/yonyou.png') }}" alt="Yonyou" />
+                        </div>
+                        <div class="solution-card-name">Yonyou</div>
+                        <a class="solution-card-btn" href="{{ route('solution_yonyou') }}">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="solution-card">
+                        <div class="solution-card-logo">
+                            <img src="{{ asset('assets/img/logo/aws.png') }}" alt="AWS" />
+                        </div>
+                        <div class="solution-card-name">AWS</div>
+                        <a class="solution-card-btn" href="{{ route('solution_aws') }}">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="solution-card">
+                        <div class="solution-card-logo">
+                            <img src="{{ asset('assets/img/logo/huawei2.png') }}" alt="Huawei" />
+                        </div>
+                        <div class="solution-card-name">Huawei</div>
+                        <a class="solution-card-btn" href="{{ route('solution_huawei') }}">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="solution-card">
+                        <div class="solution-card-logo">
+                            <img src="{{ asset('assets/img/logo/gcp2.png') }}" alt="Google Cloud" />
+                        </div>
+                        <div class="solution-card-name">Google Cloud</div>
+                        <a class="solution-card-btn" href="{{ route('solution_gcp') }}">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="solution-card">
+                        <div class="solution-card-logo">
+                            <img src="{{ asset('assets/img/logo/samsung.png') }}" alt="Samsung" />
+                        </div>
+                        <div class="solution-card-name">Samsung</div>
+                        <a class="solution-card-btn" href="{{ route('solution_samsung') }}">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="solution-card">
+                        <div class="solution-card-logo">
+                            <img src="{{ asset('assets/img/logo/ibm.png') }}" alt="IBM" />
+                        </div>
+                        <div class="solution-card-name">IBM</div>
+                        <a class="solution-card-btn" href="{{ route('solution_ibm') }}">Learn more</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-    @include('contact_solution')
+    
 @endsection

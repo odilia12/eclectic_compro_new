@@ -115,6 +115,4 @@
             </div>
         </div>
     </section>
-
-    @include('contact_solution')
 @endsection

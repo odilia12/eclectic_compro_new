@@ -11,12 +11,12 @@
         <div class="container">
             <div class="career-intro">
                 <h2 class="career-title">
-                    Let’s produce great work with great people. Come and join a<br />
-                    team of smart and supportive people committed to learning and<br />
-                    improving.
+                    Let’s Build Great Work with Great People
+
+
                 </h2>
                 <div class="career-subtitle">
-                    Help us help companies unlock their full potential by creatively implementing SAP solutions. If you eager to grow professionally and learn precious experience, we might have a seat for you!
+                    Join a team of smart and supportive professionals that dedicated to learning, innovation, and delivering real impact.
                 </div>
                 <a class="career-cta" href="mailto:info@eclectic.co.id" target="_blank" rel="noopener noreferrer">Join Us!</a>
             </div>
@@ -45,19 +45,19 @@
             <div class="career-why">
                 <div class="career-why-title">Why Join Us?</div>
                 <div class="career-why-text">
-                    At Eclectic Consulting, we believe in the power of innovation and creativity to transform businesses. Our mission is to help companies unlock their full potential by implementing cutting-edge SAP solutions that drive efficiency, productivity, and growth. We invite you to be part of this exciting journey, where your contributions will directly impact the success of companies across Indonesia and beyond.
-                    <br /><br />
-                    We’re looking for passionate individuals who are eager to grow professionally, continuously learn, and tackle new challenges. At Eclectic Consulting, we foster an environment that encourages creativity, collaboration, and personal development. Whether you’re an experienced professional or just starting your career, we provide the support and opportunities needed to thrive.
-                    <br /><br />
-                    By joining our team, you will work with the latest SAP technologies, learn from some of the best minds in the industry, and gain invaluable experience in implementing world-class solutions. We believe in empowering our employees to take ownership of their projects, innovate, and bring fresh ideas to the table. Your growth is our priority, and we are committed to providing a dynamic, rewarding career path for every member of our team.
-                    <br /><br />
-                    At Eclectic, we value teamwork, curiosity, and a strong desire to make a difference. We offer a supportive and inclusive workplace, where you can collaborate with skilled professionals and learn from diverse perspectives. If you’re ready to take your career to the next level, solve complex business challenges, and be part of something impactful, we might have the perfect role for you.
-                    <br /><br />
-                    Join us and help shape the future of business by leveraging the power of SAP. Together, we can make a difference. Explore our current job openings at Eclectic Consulting, and take the next step in your professional journey with us!
+                    At Eclectic Consulting, we believe in the power of innovation and creativity to transform businesses. Our mission is to help organizations unlock their full potential through innovative technology solutions that drive efficiency, productivity, and sustainable growth. We invite you to be part of this journey where your work creates real impact for companies across Indonesia and beyond.
+                    <br><br>
+                    We are looking for passionate individuals who are eager to grow professionally, continuously learn, and take on new challenges. At Eclectic Consulting, we promote a collaborative and supportive environment that encourages curiosity, creativity, and personal development. Whether you are an experienced professional or just starting your career, we provide the opportunities and guidance you need to thrive.
+                    <br><br>
+                    By joining our team, you will work with leading technologies, collaborate with talented professionals, and gain hands on experience delivering impactful solutions to real business challenges. We empower our people to think creatively and contribute ideas that make a difference. Your growth is our priority, and we are committed to supporting your journey every step of the way.
+                    <br><br>
+                    At Eclectic, we value teamwork, integrity, and a strong drive to create meaningful impact. We offer an inclusive workplace where diverse perspectives are welcomed, and continuous learning is part of our culture. Here, you won’t just build a career but you’ll be part of something bigger.
+                    <br><br>
+                    If you’re ready to grow, make an impact, and help shape the future of business through technology, we’d love to hear from you.
+                    <br><br>
+                    Explore our career opportunities and take the next step in your journey with Eclectic Consulting.
                 </div>
             </div>
         </div>
     </section>
-
-    @include('contact_solution')
 @endsection

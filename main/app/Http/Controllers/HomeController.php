@@ -38,7 +38,7 @@ class HomeController extends Controller
                 'logo' => 'assets/img/logo/huawei.png',
             ],
             [
-                'slug' => 'google-cloud',
+                'slug' => 'gcp',
                 'name' => 'Google Cloud',
                 'logo' => 'assets/img/logo/gcp.png',
             ],
@@ -55,6 +55,22 @@ class HomeController extends Controller
         ];
     }
 
+    private function findSolution(string $slug): ?array
+    {
+        return Arr::first($this->solutionsData(), fn (array $solution) => $solution['slug'] === $slug);
+    }
+
+    private function findSolutionOrAbort(string $slug): array
+    {
+        $solution = $this->findSolution($slug);
+
+        if (! $solution) {
+            abort(404);
+        }
+
+        return $solution;
+    }
+
     public function home()
     {
         return view('index');
@@ -67,28 +83,83 @@ class HomeController extends Controller
 
     public function solution()
     {
-        $solutions = array_map(function (array $solution) {
-            return [
-                ...$solution,
-                'url' => route('our_solution_detail', ['slug' => $solution['slug']]),
-            ];
-        }, $this->solutionsData());
-
-        return view('our_solution', [
-            'solutions' => $solutions,
-        ]);
+        return view('our_solution');
     }
 
     public function solutionDetail(string $slug)
     {
-        $solution = Arr::first($this->solutionsData(), fn (array $solution) => $solution['slug'] === $slug);
-
-        if (! $solution) {
-            abort(404);
+        if ($slug === 'google-cloud') {
+            return redirect()->route('solution_gcp');
         }
+
+        if (in_array($slug, ['sap', 'salesforce', 'yonyou'], true)) {
+            return match ($slug) {
+                'sap' => redirect()->route('solution_sap'),
+                'salesforce' => redirect()->route('solution_salesforce'),
+                'yonyou' => redirect()->route('solution_yonyou'),
+            };
+        }
+
+        $solution = $this->findSolutionOrAbort($slug);
 
         return view('solution_detail', [
             'solution' => $solution,
+        ]);
+    }
+
+    public function sapSolution()
+    {
+        return view('solution_sap', [
+            'solution' => $this->findSolutionOrAbort('sap'),
+        ]);
+    }
+
+    public function salesforceSolution()
+    {
+        return view('solution_salesforce', [
+            'solution' => $this->findSolutionOrAbort('salesforce'),
+        ]);
+    }
+
+    public function yonyouSolution()
+    {
+        return view('solution_yonyou', [
+            'solution' => $this->findSolutionOrAbort('yonyou'),
+        ]);
+    }
+
+    public function awsSolution()
+    {
+        return view('solution_aws', [
+            'solution' => $this->findSolutionOrAbort('aws'),
+        ]);
+    }
+
+    public function gcpSolution()
+    {
+        return view('solution_gcp', [
+            'solution' => $this->findSolutionOrAbort('gcp'),
+        ]);
+    }
+
+    public function huaweiSolution()
+    {
+        return view('solution_huawei', [
+            'solution' => $this->findSolutionOrAbort('huawei'),
+        ]);
+    }
+
+    public function samsungSolution()
+    {
+        return view('solution_samsung', [
+            'solution' => $this->findSolutionOrAbort('samsung'),
+        ]);
+    }
+
+    public function ibmSolution()
+    {
+        return view('solution_ibm', [
+            'solution' => $this->findSolutionOrAbort('ibm'),
         ]);
     }
 
@@ -110,7 +181,7 @@ class HomeController extends Controller
     public function news()
     {
         // return view('news');
-        
+
         return view('maintenance');
     }
 
@@ -139,7 +210,8 @@ class HomeController extends Controller
         return back()->with('status', 'Pesan berhasil dikirim.');
     }
 
-    public function maintenance(){
+    public function maintenance()
+    {
         return view('maintenance');
     }
 }

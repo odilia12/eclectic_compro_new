@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Eclectic Consulting</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="{{ asset('assets/favicon.ico') }}" />
+        <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/ec2.png') }}" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -42,6 +42,7 @@
         <a class="floating-whatsapp floating-whatsapp-bottom" href="https://api.whatsapp.com/send/?phone=6281190071725&text&type=phone_number&app_absent=0" aria-label="WhatsApp" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
+        @include('contact_solution')
         @include('footer')
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

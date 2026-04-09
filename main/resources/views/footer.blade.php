@@ -2,7 +2,7 @@
     <div class="container">
         <div class="site-footer-inner">
             <div class="site-footer-left">
-                Copyright © 2024 Eclectic Consulting | All Rights Reserved
+                Copyright © 2026 Eclectic Consulting | All Rights Reserved
             </div>
             <div class="site-footer-right">
                 <a class="site-footer-social" href="https://www.linkedin.com/company/eclecticconsulting/posts/?feedView=all" aria-label="LinkedIn" target="_blank">
