@@ -1,6 +1,6 @@
 @extends('main')
 @section('body')
-    <header class="page-hero" style="background-image: url('{{ asset('assets/img/home.webp') }}')">
+    <header class="page-hero" style="background-image: url('{{ asset('assets/img/header/succes_story_crop.png') }}')">
         <div class="container page-hero-content">
             <h1 class="page-hero-title">Success Story</h1>
             <div class="page-hero-breadcrumb"><a href="{{ route('home') }}">Home</a> / Success Story</div>
@@ -19,7 +19,7 @@
             <div class="success-story-list">
                 <div class="success-story-card">
                     <div class="success-story-logo">
-                        <img src="{{ asset('assets/img/success_story/sidomuncul.png') }}" alt="Sido Muncul" />
+                        <img src="{{ asset('assets/img/story/sidomuncul.svg') }}" alt="Sido Muncul" />
                     </div>
                     <div class="success-story-quote">
                         <div class="success-story-quote-text">
@@ -29,13 +29,13 @@
                         <div class="success-story-role">Finance & Accounting Manager of PT Industri Jamu dan Farmasi Sido Muncul Tbk.</div>
                     </div>
                     <div class="success-story-action">
-                        <a class="success-story-btn" href="#!">Learn more</a>
+                        <a class="success-story-btn" href="{{ route('maintenance') }}">Learn more</a>
                     </div>
                 </div>
 
                 <div class="success-story-card">
                     <div class="success-story-logo">
-                        <img src="{{ asset('assets/img/success_story/pollux.png') }}" alt="Pollux Properties" />
+                        <img src="{{ asset('assets/img/story/pollux.png') }}" alt="Pollux Properties" />
                     </div>
                     <div class="success-story-quote">
                         <div class="success-story-quote-text">
@@ -45,13 +45,13 @@
                         <div class="success-story-role">IT Head of PT Pollux Properti Indonesia Tbk.</div>
                     </div>
                     <div class="success-story-action">
-                        <a class="success-story-btn" href="#!">Learn more</a>
+                        <a class="success-story-btn" href="{{ route('maintenance') }}">Learn more</a>
                     </div>
                 </div>
 
                 <div class="success-story-card">
                     <div class="success-story-logo">
-                        <img src="{{ asset('assets/img/success_story/g2.png') }}" alt="G2 Cosmetics" />
+                        <img src="{{ asset('assets/img/story/goc.png') }}" alt="G2 Cosmetics" />
                     </div>
                     <div class="success-story-quote">
                         <div class="success-story-quote-text">
@@ -61,7 +61,7 @@
                         <div class="success-story-role">Director of PT Gloria Origita Cosmetics</div>
                     </div>
                     <div class="success-story-action">
-                        <a class="success-story-btn" href="#!">Learn more</a>
+                        <a class="success-story-btn" href="{{ route('maintenance') }}">Learn more</a>
                     </div>
                 </div>
             </div>

@@ -244,20 +244,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="sap-client-card">
-                            <div class="sap-client-logo">
-                                <img src="{{ asset('assets/img/story/nabati.png') }}" alt="Pollux Properties" width="100%" />
-                            </div>
-                            <div class="sap-client-content">
-                                <div class="sap-client-title">PT Pinus Merah Abadi Enerlife Pte Ltd</div>
-                                <div class="sap-client-text">
-                                    In FMCG industry every day is a competition. As a large enterprise we are eager to improve in our every line of business. Choosing SAP HANA Enterprise Cloud (HEC) solution...
-                                </div>
-                                <a class="sap-client-btn" href="{{ route('maintenance') }}">learn more about us</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="sap-client-controls">
@@ -276,17 +262,17 @@
 
             <div class="row g-4 justify-content-center pt-4">
                 <div class="col-12 col-md-4">
-                    <a class="industry-card" href="{{ route('maintenance') }}" style="background-image: url('{{ asset('assets/img_template/portfolio/1.jpg') }}')">
+                    <a class="industry-card" href="{{ route('maintenance') }}" style="background-image: url('{{ asset('assets/img/sap/pharmacy.png') }}')">
                         <span class="industry-card-label">Pharmacy and Chemicals</span>
                     </a>
                 </div>
                 <div class="col-12 col-md-4">
-                    <a class="industry-card" href="{{ route('maintenance') }}" style="background-image: url('{{ asset('assets/img_template/portfolio/2.jpg') }}')">
+                    <a class="industry-card" href="{{ route('maintenance') }}" style="background-image: url('{{ asset('assets/img/sap/consumer_goods.png') }}')">
                         <span class="industry-card-label">Consumer Goods</span>
                     </a>
                 </div>
                 <div class="col-12 col-md-4">
-                    <a class="industry-card" href="{{ route('maintenance') }}" style="background-image: url('{{ asset('assets/img_template/portfolio/3.jpg') }}')">
+                    <a class="industry-card" href="{{ route('maintenance') }}" style="background-image: url('{{ asset('assets/img/sap/logistics.png') }}')">
                         <span class="industry-card-label">Logistics</span>
                     </a>
                 </div>
@@ -294,22 +280,22 @@
 
             <div class="row g-4 justify-content-center pt-3">
                 <div class="col-12 col-md-3">
-                    <a class="industry-card" href="{{ route('maintenance') }}" style="background-image: url('{{ asset('assets/img_template/portfolio/4.jpg') }}')">
+                    <a class="industry-card" href="{{ route('maintenance') }}" style="background-image: url('{{ asset('assets/img/sap/retail.png') }}')">
                         <span class="industry-card-label">Retail and Distribution</span>
                     </a>
                 </div>
                 <div class="col-12 col-md-3">
-                    <a class="industry-card" href="{{ route('maintenance') }}" style="background-image: url('{{ asset('assets/img_template/portfolio/5.jpg') }}')">
+                    <a class="industry-card" href="{{ route('maintenance') }}" style="background-image: url('{{ asset('assets/img/sap/mills.png') }}')">
                         <span class="industry-card-label">Mills</span>
                     </a>
                 </div>
                 <div class="col-12 col-md-3">
-                    <a class="industry-card" href="{{ route('maintenance') }}" style="background-image: url('{{ asset('assets/img_template/portfolio/6.jpg') }}')">
+                    <a class="industry-card" href="{{ route('maintenance') }}" style="background-image: url('{{ asset('assets/img/sap/real_estate.png') }}')">
                         <span class="industry-card-label">Real Estate</span>
                     </a>
                 </div>
                 <div class="col-12 col-md-3">
-                    <a class="industry-card" href="{{ route('maintenance') }}" style="background-image: url('{{ asset('assets/img_template/portfolio/3.jpg') }}')">
+                    <a class="industry-card" href="{{ route('maintenance') }}" style="background-image: url('{{ asset('assets/img/sap/oil_gas.png') }}')">
                         <span class="industry-card-label">Oil and Gas</span>
                     </a>
                 </div>

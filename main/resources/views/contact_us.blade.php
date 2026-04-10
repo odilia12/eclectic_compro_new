@@ -1,6 +1,6 @@
 @extends('main')
 @section('body')
-    <header class="page-hero" style="background-image: url('{{ asset('assets/img/home.webp') }}')">
+    <header class="page-hero" style="background-image: url('{{ asset('assets/img/header/contact_us_crop.png') }}')">
         <div class="container page-hero-content">
             <h1 class="page-hero-title">Contact Us</h1>
             <div class="page-hero-breadcrumb"><a href="{{ route('home') }}">Home</a> / Contact Us</div>

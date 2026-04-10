@@ -1,6 +1,6 @@
 @extends('main')
 @section('body')
-    <header class="page-hero" style="background-image: url('{{ asset('assets/img/home.webp') }}')">
+    <header class="page-hero" style="background-image: url('{{ asset('assets/img/header/career_crop.png') }}')">
         <div class="container page-hero-content">
             <h1 class="page-hero-title">Exciting Career</h1>
             <div class="page-hero-breadcrumb"><a href="{{ route('home') }}">Home</a> / Exciting Career</div>
@@ -18,28 +18,11 @@
                 <div class="career-subtitle">
                     Join a team of smart and supportive professionals that dedicated to learning, innovation, and delivering real impact.
                 </div>
-                <a class="career-cta" href="mailto:info@eclectic.co.id" target="_blank" rel="noopener noreferrer">Join Us!</a>
+                <a class="career-cta" href="https://career.eclectic.co.id/" target="_blank" rel="noopener noreferrer">Join Us!</a>
             </div>
 
             <div class="career-gallery">
-                <div class="career-gallery-item">
-                    <img src="{{ asset('assets/img/landingpage/team.png') }}" alt="Career 1" />
-                </div>
-                <div class="career-gallery-item">
-                    <img src="{{ asset('assets/img/landingpage/team.png') }}" alt="Career 2" />
-                </div>
-                <div class="career-gallery-item">
-                    <img src="{{ asset('assets/img/landingpage/team.png') }}" alt="Career 3" />
-                </div>
-                <div class="career-gallery-item">
-                    <img src="{{ asset('assets/img/landingpage/team.png') }}" alt="Career 4" />
-                </div>
-                <div class="career-gallery-item">
-                    <img src="{{ asset('assets/img/landingpage/team.png') }}" alt="Career 5" />
-                </div>
-                <div class="career-gallery-item">
-                    <img src="{{ asset('assets/img/landingpage/team.png') }}" alt="Career 6" />
-                </div>
+                <img src="{{ asset('assets/img/career.png') }}" width="100%" />
             </div>
 
             <div class="career-why">

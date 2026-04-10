@@ -6,7 +6,7 @@
             <div class="page-hero-breadcrumb"><a href="{{ route('home') }}">Home</a> / About Us</div>
         </div>
     </header>
-    <section class="page-section about-us-section" id="about-us-intro" style="background-image: url('{{ asset('assets/img/aboutus/header_about_us.png') }}'); background-size: 100%;">
+    <section class="page-section about-us-section" id="about-us-intro" style="background-image: url('{{ asset('assets/img/aboutus/header_about_us.png') }}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6" style="text-align: left;">
